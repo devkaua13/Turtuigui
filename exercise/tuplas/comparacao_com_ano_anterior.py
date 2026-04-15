@@ -17,6 +17,8 @@ vendas_produtos = [('iphone', 558147, 951642),
 
 for nome, ano2019, ano2020 in vendas_produtos:
     if ano2020>ano2019:
+        # Formula crescimento percentual
+        # novo / velho - 1 
         crescimento = ano2020/ano2019 - 1
         print("{} teve {} vendas em 2019, {} vendas em 2020. Crescimento de {:.1%} \n" .format(nome, ano2019, ano2020, crescimento))
 
